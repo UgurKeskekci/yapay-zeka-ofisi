@@ -1,0 +1,18 @@
+{
+  "kendi": {
+    "ad": "Kanalınız",
+    "id": "UCxxxxxxxxxxxxxxxxxxxxxx",
+    "url": "https://www.youtube.com/@KANALINIZ"
+  },
+  "rakipler": [
+    {
+      "ad": "Örnek Kanal A",
+      "id": "UCxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+      "ad": "Örnek Kanal B",
+      "id": "UCxxxxxxxxxxxxxxxxxxxxxx"
+    }
+  ],
+  "_not": "ÖRNEK: Tüm kanal kimlikleri yer tutucudur. Kendi kanal kimliğinizi YouTube Studio > Ayarlar > Kanal > Gelişmiş ayarlar üzerinden bulabilirsiniz. Başka kanalda kanal sayfasının kaynak kodunda channelId veya externalId alanını arayın, bulunan kimliği kanal sayfasıyla doğrulayın. Yeni videolar: https://www.youtube.com/feeds/videos.xml?channel_id=<id> (izlenme sayısı varsa media:statistics alanında). Kanal bağlantısını ortak/sahip.md ile tutarlı tutun."
+}

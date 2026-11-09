@@ -1,0 +1,18 @@
+{
+  "not": "ÖRNEK: Fiyat ve stok yalnız görünür sayfadan okunur. Satıcı stok sistemiyle bağlantı kurulmaz.",
+  "siteler": {
+    "fiyat_gecmisi": "Patronun verdiği karşılaştırma ve ürün sayfaları",
+    "siklik": "Günde bir tur önerilir."
+  },
+  "urunler": [
+    {
+      "kimlik": "urun_a",
+      "ad": "Karşılaştırılacak ürün",
+      "ayrinti": "Tam marka, model, paket ve varyant doldurulacak",
+      "linkler": [],
+      "hedef_tl": null,
+      "acil": false,
+      "not": "ÖRNEK: Rakip ürün bağlantılarını ekleyin; stok ibaresini fiyatla birlikte kaydedin."
+    }
+  ]
+}

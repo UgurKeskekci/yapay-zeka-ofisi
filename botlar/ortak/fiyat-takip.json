@@ -1,0 +1,29 @@
+{
+  "not": "ÖRNEK: Stajyer takip listesi. Modeli, bağlantıları, hedef fiyatı ve aylık bitiş gününü patron doldurur. Boş alanlar bilgi eksikliğidir; fiyat tahmin edilmez. Yeni ürün aynı biçimde eklenir.",
+  "siteler": {
+    "fiyat_gecmisi": "Fiyat geçmişi gösteren karşılaştırma sitesi önce gelir (ör. akakce.com ürün sayfası). Satıcı sitesi ikinci kaynaktır.",
+    "siklik": "Günde en çok 2 kez. Siteyi yormamak ve engellenmemek için."
+  },
+  "urunler": [
+    {
+      "kimlik": "ssd",
+      "ad": "2 TB NVMe SSD",
+      "ayrinti": "ÖRNEK: Marka ve modeli doldurun.",
+      "linkler": [],
+      "hedef_tl": null,
+      "acil": false,
+      "not": "Örnek ürün; kendi takip edeceğiniz ürünle değiştirin."
+    },
+    {
+      "kimlik": "kahve",
+      "ad": "Kahve çekirdeği 1 kg (aylık)",
+      "ayrinti": "ÖRNEK: Tür ve marka bilgisini doldurun.",
+      "linkler": [],
+      "hedef_tl": null,
+      "aylik": {
+        "bitis_gunu": null,
+        "adet": 1
+      }
+    }
+  ]
+}

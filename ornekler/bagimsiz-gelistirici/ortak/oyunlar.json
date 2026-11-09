@@ -1,0 +1,24 @@
+{
+  "_not": "ÖRNEK: npm kilit dosyası ve Vitest olan web projesi. Komutlar projenizde doğrulanmalı. Bağlantıları doldurun.",
+  "oyunlar": [
+    {
+      "ad": "Örnek uygulama",
+      "tur": "Node / TypeScript web uygulaması",
+      "oncelik": 1,
+      "github": "https://github.com/KULLANICI/DEPO",
+      "magaza_durumu": "Patron dolduracak",
+      "kod": {
+        "yerel_kopya": "~/ofis/repo/proje",
+        "taban_dal": "main",
+        "ofis_dali": "ofis/<kisa-ad>",
+        "ilk_kurulum": "npm ci",
+        "kontrol_betikleri": "tests/<kisa-ad>_kontrol.test.ts",
+        "kontrol_komutu": "npx vitest run tests/<kisa-ad>_kontrol.test.ts",
+        "hizli_test": "npx tsc -b && npm test -- --run && npm run build",
+        "pr_baglanti": "https://github.com/KULLANICI/DEPO/compare/{taban_dal}...{ofis_dali}?expand=1",
+        "is_listesi": "ortak/is-listesi.md"
+      }
+    }
+  ],
+  "ulkeler": []
+}

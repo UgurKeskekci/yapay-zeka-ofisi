@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" font-family="Arial,Helvetica,sans-serif" role="img" aria-labelledby="baslik aciklama">
+<title id="baslik">Örnek kanal analizi</title>
+<desc id="aciklama">Tüm kanal adları ve sayılar temsili. Örnek Kanal A uzun videosu ortancanın iki katı, Örnek Kanal B Shorts videosu üç katı.</desc>
+<rect width="900" height="460" fill="#14171c"/>
+<text x="24" y="42" fill="#ece7df" font-size="22" font-weight="700">ÖRNEK VERİ: kanal ortancasına göre izlenme</text>
+<text x="24" y="74" fill="#a9b1bd" font-size="16">Kurgusal kanallar ve temsili sayılar. Canlı ölçüm değildir.</text>
+<text x="24" y="150" fill="#ece7df" font-size="16">Örnek Kanal A (uzun video)</text>
+<rect x="330" y="130" width="300" height="28" fill="#e8b04a"/>
+<text x="650" y="151" fill="#ece7df" font-size="18">2x (örnek)</text>
+<text x="24" y="230" fill="#ece7df" font-size="16">Örnek Kanal B (Shorts, erken)</text>
+<rect x="330" y="210" width="450" height="28" fill="#5aa9e6"/>
+<text x="798" y="231" fill="#ece7df" font-size="18">3x</text>
+<text x="24" y="350" fill="#a9b1bd" font-size="16">Kaynak: veri.json içindeki örnek kayıtlar.</text>
+</svg>

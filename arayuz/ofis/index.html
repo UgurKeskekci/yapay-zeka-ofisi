@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171e20">
+  <title>Yapay Zeka Ofisi | Sığınak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="ofis.css">
+</head>
+<body>
+  <main id="ofis">
+    <section class="metrikler" aria-label="Ofis durumu">
+      <div class="metrik sunucu-adi"><span class="nokta"></span><span id="sunucu-ad">Hostinger KVM 2</span></div>
+      <div class="metrik"><span class="etiket">Çalışan</span><span class="deger" id="calisan">0/5</span></div>
+      <div class="metrik"><span class="etiket">Biten iş</span><span class="deger" id="biten">0</span></div>
+      <div class="metrik vurgu-onay"><span class="etiket">Onay bekleyen</span><span class="deger" id="onay-ust">0</span></div>
+      <div class="metrik"><span class="etiket">Öğrenilen skill</span><span class="deger" id="skill">0</span></div>
+      <div class="metrik"><span class="etiket">Bugün</span><span class="deger" id="harcama">$0.00</span></div>
+      <div class="metrik"><span class="etiket">Kalan kredi</span><span class="deger" id="kredi">$100.00</span></div>
+      <div class="metrik canli"><span class="canli-isik" aria-label="Ofis çevrimiçi"></span><span id="saat">09:58</span></div>
+    </section>
+    <div class="icerik">
+      <section class="sahne" id="sahne" aria-label="Dört katlı yer altı sığınağının yandan kesiti">
+        <canvas id="dunya" width="1312" height="906" role="img" aria-label="Beş bot, çalışma odaları, sağda asansör ve en altta sunucu dairesi"></canvas>
+      </section>
+      <aside aria-label="Operasyon panelleri">
+        <div id="genel-paneller">
+          <section class="panel ekip-paneli"><div class="panel-baslik"><h2>Ekip</h2><span class="kucuk">Tıkla, ayrıntısını gör</span></div><div id="ekip"></div></section>
+          <section class="panel onay-paneli"><div class="panel-baslik"><h2>Onay masası</h2><span class="sayi" id="onay-sayi">0 bekliyor</span></div><div id="onay"></div></section>
+        </div>
+        <section id="bot-paneli" class="panel" aria-label="Çalışan ayrıntıları" hidden></section>
+      </aside>
+    </div>
+    <div id="bildirim" role="status" hidden></div>
+    <footer><div class="aciklama"><span>Bir çalışana tıklayın: ne yaptığını görün</span><span><kbd>1-5</kbd> Çalışan seç <kbd>Esc</kbd> Kapat</span><button type="button" id="sakin-dugme" aria-pressed="false"><kbd>M</kbd> Sakin mod: <b id="sakin-durum">kapalı</b></button><a href="../pano/" style="color: inherit; text-decoration: none; border: 1px solid #526053; border-radius: 4px; padding: 1px 10px;">Sonuçlar panosu</a></div><span class="ornek">ÖRNEK VERİ</span></footer>
+  </main>
+  <dialog id="isik-kutusu" aria-label="Çıktı önizlemesi"><div class="isik-ust"><span id="isik-baslik"></span><button id="isik-kapat" aria-label="Önizlemeyi kapat">✕</button></div><div id="isik-icerik"></div></dialog>
+  <script src="../ortak/veri.js"></script>
+  <script src="ofis.js"></script>
+</body>
+</html>

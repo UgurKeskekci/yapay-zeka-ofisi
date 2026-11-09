@@ -1,0 +1,85 @@
+{
+  "not": "ÖRNEK VERİ: Tüm kişiler, olaylar, saatler ve fiyatlar temsili. Gerçek mesaj içermez.",
+  "kisi": {
+    "ad": "Müdür",
+    "alt": "Yapay Zeka Ofisi"
+  },
+  "mesajlar": [
+    {
+      "ayrac": "Örnek gün"
+    },
+    {
+      "saat": "09:30",
+      "kim": "mudur",
+      "metin": "Günaydın Patron. Örnek günün planı:\n1. Gündem: resmi model duyuruları\n2. Analist: örnek kanal analizi\n3. Oyun Stüdyosu: Örnek Oyun'da dil seçimi\n4. Stajyer: SSD ve aylık alışveriş fiyatları"
+    },
+    {
+      "saat": "09:31",
+      "kim": "patron",
+      "metin": "Tamam, SSD fiyatını geçmişle karşılaştırıp haber verin."
+    },
+    {
+      "saat": "09:31",
+      "kim": "mudur",
+      "metin": "Not aldım. Stajyer fiyatı kaydedip değişiklikleri geçmişle karşılaştıracak."
+    },
+    {
+      "saat": "10:20",
+      "kim": "mudur",
+      "bot": "oyun",
+      "metin": "**PR'a hazır dal** (örnek)\nÖrnek Oyun: ana menüde dil seçimi kaydedilmiyor.\nTemsili senaryoda kontrol betiğiyle üretildi, Claude Code ile düzeltildi.\nKontrol ve hızlı test: geçti (örnek sonuç). Cihazda denenmeli.\nPR'ı açmanız ve değişikliği incelemeniz bekleniyor.",
+      "dugmeler": [
+        "PR'ı aç",
+        "Değişikliği göster"
+      ]
+    },
+    {
+      "saat": "11:42",
+      "kim": "mudur",
+      "bot": "gundem",
+      "metin": "**Yeni model duyurusu** (örnek)\nÖrnek Model için kurgusal duyuru.\nNe değişti: örnek kod yardımcısı yenilenmiş.\nKaynak: <resmi duyuru bağlantısı, yer tutucu>"
+    },
+    {
+      "saat": "11:44",
+      "kim": "patron",
+      "metin": "Videoya değer mi?"
+    },
+    {
+      "saat": "11:45",
+      "kim": "mudur",
+      "bot": "gundem",
+      "metin": "Uygulamalı bir deneme adayı. Analist kanal verisiyle değerlendirecek; taslak onay masasında."
+    },
+    {
+      "saat": "14:05",
+      "kim": "mudur",
+      "bot": "stajyer",
+      "metin": "**SSD fiyatı** (örnek)\nBugün: 4.000 TL (temsili).\nÖrnek geçmişteki en düşük fiyat: 3.500 TL.\nYorum: Örnek fiyat geçmişteki düşük fiyattan yüksek, beklemek uygun görünüyor."
+    },
+    {
+      "saat": "17:20",
+      "kim": "mudur",
+      "bot": "analist",
+      "metin": "Örnek video önerisi: küçük bir uygulamayı yapay zeka ekibiyle geliştirmek. Ayrıntı raporda."
+    },
+    {
+      "saat": "18:10",
+      "kim": "mudur",
+      "bot": "stajyer",
+      "metin": "**Aylık alışveriş** (örnek)\nKahve çekirdeği 1 kg: 600 TL, kargo 50 TL.\nToplam: 650 TL (tüm fiyatlar temsili).\nSatın alma yapılmadı. Gerçek kullanımda ürün bağlantısı eklenir.",
+      "dugmeler": [
+        "Linkleri aç",
+        "Gelecek ay hatırlat"
+      ]
+    },
+    {
+      "saat": "19:00",
+      "kim": "mudur",
+      "metin": "İyi akşamlar Patron, örnek iş gününün özeti:\n1. Gündem: temsili model raporu ve X taslağı\n2. Analist: örnek video önerisi\n3. Oyun: dil seçimi için PR'a hazır dal\n4. Stajyer: fiyat geçmişi ve aylık alışveriş\n\nOnay bekleyen 3 örnek iş: PR'a hazır dal, X taslağı, devlog.\nBu senaryo gerçek harcama içermez.",
+      "dugmeler": [
+        "Onay masası",
+        "Ayrıntı"
+      ]
+    }
+  ]
+}

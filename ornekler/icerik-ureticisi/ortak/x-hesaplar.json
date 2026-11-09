@@ -1,0 +1,19 @@
+{
+  "not": "Gündem'in izlediği resmi X hesapları. Kurulumdan önce her hesabın doğru ve resmi olduğu bir kez kontrol edilir.",
+  "modeller": [
+    { "sirket": "OpenAI", "hesaplar": ["OpenAI", "OpenAIDevs"] },
+    { "sirket": "Anthropic", "hesaplar": ["AnthropicAI", "claudeai"] },
+    { "sirket": "Google", "hesaplar": ["GoogleDeepMind", "GeminiApp"] },
+    { "sirket": "xAI", "hesaplar": ["xai"] },
+    { "sirket": "Meta", "hesaplar": ["AIatMeta"] },
+    { "sirket": "DeepSeek", "hesaplar": ["deepseek_ai"] },
+    { "sirket": "Qwen (Alibaba)", "hesaplar": ["Alibaba_Qwen"] },
+    { "sirket": "Moonshot (Kimi)", "hesaplar": ["Kimi_Moonshot"] },
+    { "sirket": "Mistral", "hesaplar": ["MistralAI"] },
+    { "sirket": "Nous Research", "hesaplar": ["NousResearch"] }
+  ],
+  "araclar": [
+    { "ad": "Cursor", "hesaplar": ["cursor_ai"] }
+  ],
+  "anahtar_kelimeler": ["new model", "introducing", "now available", "release", "yeni model"]
+}

@@ -1,0 +1,107 @@
+:root {
+  font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: dark;
+  --phone-scale: 1;
+  --chat-bg: #0b141a;
+  --header-bg: #202c33;
+  --incoming: #202c33;
+  --outgoing: #005c4b;
+  --accent: #00a884;
+  --text: #e9edef;
+  --secondary: #8696a0;
+  --entry-duration: 180ms;
+}
+
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+body { background: #0f1012; color: var(--text); -webkit-font-smoothing: antialiased; }
+[hidden] { display: none !important; }
+.svg-library { position: absolute; width: 0; height: 0; overflow: hidden; }
+.stage { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.sample-label { position: fixed; top: 24px; left: 28px; color: #62666d; font-size: 12px; letter-spacing: .02em; }
+
+.phone {
+  width: 440px;
+  height: 940px;
+  padding: 9px;
+  border: 1px solid #45464a;
+  border-radius: 56px;
+  background: #1b1c1f;
+  box-shadow: 0 0 0 2px #090a0c, inset 0 0 0 2px #2e3034, 0 22px 55px #0007;
+  transform: scale(var(--phone-scale));
+  transform-origin: center;
+  flex-shrink: 0;
+}
+.screen { position: relative; height: 100%; border-radius: 46px; overflow: hidden; background: var(--chat-bg); display: flex; flex-direction: column; isolation: isolate; }
+.status-bar { height: 54px; flex-shrink: 0; padding: 17px 25px 0 29px; display: flex; align-items: flex-start; justify-content: space-between; background: var(--header-bg); color: var(--text); }
+.status-time { min-width: 48px; font-size: 15px; font-weight: 650; font-variant-numeric: tabular-nums; line-height: 20px; }
+.status-icons { display: flex; align-items: center; gap: 6px; height: 18px; }
+.status-icons svg { height: 15px; width: 19px; fill: currentColor; }
+.status-icons .wifi { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.wifi circle { fill: currentColor; stroke: none; }
+.status-icons .battery { width: 28px; fill: none; stroke: currentColor; stroke-width: 1.2; }
+.battery .battery-fill { fill: currentColor; stroke: none; }
+.camera-island { position: absolute; z-index: 2; width: 112px; height: 29px; top: 10px; left: 50%; transform: translateX(-50%); border-radius: 20px; background: #08090b; }
+.camera-island i { position: absolute; right: 11px; top: 9px; width: 10px; height: 10px; border-radius: 50%; background: #111b2b; box-shadow: inset 0 0 0 3px #0d1119; }
+.chat-header { flex-shrink: 0; height: 74px; padding: 5px 15px 12px 9px; display: flex; align-items: center; gap: 9px; background: var(--header-bg); box-shadow: 0 1px 0 #0002; z-index: 1; }
+.icon { width: 24px; height: 24px; display: block; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.back-icon { color: var(--text); margin-right: -4px; }
+.avatar { width: 44px; height: 44px; border-radius: 50%; background: #e8b04a; color: #302619; display: grid; place-items: center; font-size: 23px; font-weight: 650; flex-shrink: 0; }
+.contact { flex: 1; min-width: 0; }
+.contact h1 { font-size: 19px; font-weight: 600; line-height: 25px; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.contact p { font-size: 12px; line-height: 18px; min-height: 18px; margin: 0; color: var(--secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.contact p.typing { color: var(--accent); }
+.header-icons { display: flex; gap: 17px; align-items: center; margin-left: 3px; }
+.header-icons .icon { width: 21px; height: 21px; }
+
+.messages { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 16px 14px 12px; display: flex; flex-direction: column; gap: 9px; scrollbar-width: none; outline-offset: -3px; background-image: radial-gradient(ellipse at center, #8696a009 1px, transparent 1.5px); background-size: 23px 23px; }
+.messages::-webkit-scrollbar { display: none; }
+.date-divider { align-self: center; flex-shrink: 0; padding: 5px 12px; border-radius: 8px; background: #18252e; color: #b5c1c8; font-size: 12px; font-weight: 500; line-height: 17px; margin: 0 0 6px; box-shadow: 0 1px 2px #0002; }
+.message-group { flex-shrink: 0; width: fit-content; max-width: 88%; min-width: 76px; align-self: flex-start; }
+.message-group.outgoing { align-self: flex-end; }
+.message-group.entering { animation: message-in var(--entry-duration) ease-out both; }
+.paused .message-group.entering { animation-play-state: paused; }
+.bubble { background: var(--incoming); border-radius: 3px 12px 12px; padding: 9px 11px 7px; box-shadow: 0 1px 1px #0003; overflow-wrap: anywhere; }
+.outgoing .bubble { background: var(--outgoing); border-radius: 12px 3px 12px 12px; }
+.bot-name { font-size: 13px; font-weight: 700; line-height: 19px; margin-bottom: 3px; }
+.message-text { font-size: 17px; line-height: 1.4; white-space: pre-wrap; }
+.message-text strong { font-weight: 650; }
+.message-link { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.message-meta { display: flex; justify-content: flex-end; align-items: center; gap: 5px; margin: 3px 0 -1px 15px; font-size: 10px; line-height: 14px; color: var(--secondary); font-variant-numeric: tabular-nums; }
+.outgoing .message-meta { color: #a5bdb5; }
+.message-meta .icon { width: 18px; height: 12px; stroke-width: 1.6; color: #a5bdb5; }
+.message-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 125px), 1fr)); gap: 3px; margin-top: 4px; }
+.message-actions button { min-width: 0; border: 0; border-radius: 5px; padding: 10px 8px; background: var(--incoming); color: var(--accent); font-family: inherit; font-size: 13px; font-weight: 500; line-height: 18px; overflow-wrap: anywhere; cursor: default; }
+.outgoing .message-actions button { background: var(--outgoing); }
+
+.composer { display: flex; flex-shrink: 0; gap: 7px; align-items: flex-end; padding: 7px 8px 4px; background: var(--chat-bg); }
+.input-shell { flex: 1; min-width: 0; display: flex; gap: 11px; align-items: flex-end; min-height: 49px; padding: 13px 12px 12px; background: var(--header-bg); border-radius: 25px; color: var(--secondary); }
+.input-shell .icon { width: 23px; height: 23px; }
+.compose-text { flex: 1; min-width: 0; max-height: 112px; overflow: auto; scrollbar-width: none; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 17px; line-height: 24px; color: var(--text); }
+.compose-text::-webkit-scrollbar { display: none; }
+.placeholder { color: var(--secondary); }
+.composer.has-text .camera-icon { display: none; }
+.compose-button { width: 49px; height: 49px; flex-shrink: 0; display: grid; place-items: center; border: 0; border-radius: 50%; color: #fff; background: var(--accent); cursor: default; padding: 0; }
+.compose-button .icon { width: 23px; height: 23px; }
+.home-area { height: 26px; flex-shrink: 0; display: flex; justify-content: center; align-items: center; background: var(--chat-bg); }
+.home-indicator { width: 132px; height: 5px; border-radius: 9px; background: #d2d7db; opacity: .85; }
+.load-error { align-self: center; margin: auto 10px; color: var(--secondary); font-size: 15px; line-height: 1.5; text-align: center; }
+
+body[data-theme="telegram"] { --chat-bg: #0e1621; --header-bg: #17212b; --incoming: #182533; --outgoing: #2b5278; --accent: #5288c1; --text: #f5f5f5; --secondary: #708499; }
+body[data-theme="telegram"] .messages { background-image: none; }
+body[data-theme="telegram"] .date-divider { border-radius: 20px; background: #1b2a39; }
+body[data-theme="telegram"] .bubble { border-radius: 13px 13px 13px 4px; }
+body[data-theme="telegram"] .outgoing .bubble { border-radius: 13px 13px 4px 13px; }
+body[data-theme="telegram"] .video-icon { display: none; }
+body[data-theme="telegram"] .header-icons { gap: 23px; }
+body[data-theme="telegram"] .chat-header { gap: 12px; }
+body[data-theme="telegram"] .composer { background: var(--header-bg); gap: 0; padding: 6px 10px; }
+body[data-theme="telegram"] .input-shell { padding-left: 5px; gap: 15px; }
+body[data-theme="telegram"] .compose-button { background: transparent; color: var(--secondary); }
+body[data-theme="telegram"] .composer.has-text .compose-button { color: var(--accent); }
+body[data-theme="telegram"] .camera-icon { display: none; }
+body[data-theme="telegram"] .home-area { background: var(--header-bg); }
+body[data-theme="telegram"] .outgoing .message-meta,
+body[data-theme="telegram"] .outgoing .message-meta .icon { color: #a5c7e5; }
+
+@keyframes message-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }

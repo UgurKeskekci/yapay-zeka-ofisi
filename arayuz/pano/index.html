@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171e20">
+  <title>Sonuçlar panosu | Yapay Zeka Ofisi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="pano.css">
+</head>
+<body>
+  <main class="pano">
+    <header class="ust-serit">
+      <div><h1>Sonuçlar panosu</h1><p class="alt-baslik">Yapay Zeka Ofisi</p></div>
+      <div class="ust-bilgi">
+        <time id="saat" aria-label="Ofis saati">...</time>
+        <span class="bugun">Bugün <strong id="toplam">0</strong> çıktı</span>
+        <a class="dugme" href="../ofis/">Ofis ekranına dön</a>
+      </div>
+    </header>
+    <div class="tahta" id="tahta" aria-label="Botların çıktıları"></div>
+    <noscript><p>Sonuçları görmek için JavaScript'i etkinleştirin.</p></noscript>
+  </main>
+  <dialog id="okuma" aria-labelledby="okuma-baslik">
+    <div class="okuma-paneli">
+      <header class="okuma-ust">
+        <div class="dosya-kimlik"><span class="nokta" aria-hidden="true"></span><strong id="okuma-bot"></strong><time id="okuma-saat"></time></div>
+        <div class="okuma-eylemler">
+          <a class="dugme" id="dosyayi-ac" target="_blank" rel="noopener noreferrer">Dosyayı aç ↗</a>
+          <button type="button" id="kapat" aria-label="Okuma görünümünü kapat (Esc)">Kapat <kbd>Esc</kbd></button>
+        </div>
+      </header>
+      <div class="okuma-kaydir" id="okuma-kaydir" tabindex="0" aria-label="Dosya içeriği">
+        <h2 id="okuma-baslik"></h2>
+        <article id="okuma-icerik" class="markdown" aria-busy="false"></article>
+      </div>
+      <nav class="okuma-alt" aria-label="Aynı botun çıktıları arasında gezinme">
+        <button type="button" id="onceki" aria-label="Önceki çıktıyı aç (sol ok)">← Önceki</button>
+        <span id="sira" aria-live="polite"></span>
+        <button type="button" id="sonraki" aria-label="Sonraki çıktıyı aç (sağ ok)">Sonraki →</button>
+      </nav>
+    </div>
+  </dialog>
+  <script src="../ortak/veri.js"></script>
+  <script src="pano.js"></script>
+</body>
+</html>

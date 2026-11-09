@@ -1,0 +1,53 @@
+{
+  "_not": "ÖRNEK: adları, mağaza kimliklerini, bundle değerini, bağlantıları ve kod komutlarını kendi projenize göre doldurun. Sıfır kimlikler yer tutucudur, canlı veri değildir. En küçük oncelik değerli proje geliştirme projesidir; diğerleri yalnız takip edilir. Kod için Godot 4 örneği verilmiştir, başka motor ve uygulamalarda komutları değiştirin. yerel_kopya ile kurulumdaki OFIS_REPO_AD aynı klasörü göstermeli. Komutları projenizde doğrulayın. magaza_durumu sahibin son notudur; canlı kayıtla fark varsa ikisini de yazın. Boş yorum akışını yeni yorum yok diye raporlayın.",
+  "oyunlar": [
+    {
+      "ad": "Örnek Oyun",
+      "diger_adlar": [],
+      "tur": "Mobil oyun (Godot 4 örneği), App Store",
+      "oncelik": 1,
+      "app_store_id": "0000000000",
+      "bundle": "com.ornek.oyun",
+      "yorum_akisi": "https://itunes.apple.com/{ulke}/rss/customerreviews/id=0000000000/sortBy=mostRecent/json",
+      "x_arama": [
+        "\"Örnek Oyun\""
+      ],
+      "github": "https://github.com/KULLANICI/ornek-oyun",
+      "magaza_durumu": "ÖRNEK: İlk sürüm hazırlık aşamasında. Gerçek mağaza durumunu kurulumdan önce yazın.",
+      "kod": {
+        "yerel_kopya": "~/ofis/repo/proje",
+        "taban_dal": "main",
+        "ofis_dali": "ofis/<kisa-ad>",
+        "godot": "4 (örnek motor, kendi sürümünüzü yazın)",
+        "ilk_kurulum": "godot --headless --path . --import",
+        "hizli_test": "godot --headless --path . -s test/hizli_test.gd",
+        "kontrol_betikleri": "test/<kisa-ad>_kontrol.gd",
+        "kontrol_komutu": "godot --headless --path . -s test/<kisa-ad>_kontrol.gd",
+        "pr_baglanti": "https://github.com/KULLANICI/ornek-oyun/compare/{taban_dal}...{ofis_dali}?expand=1",
+        "is_listesi": "ortak/is-listesi.md"
+      }
+    },
+    {
+      "ad": "Örnek Steam Oyunu",
+      "tur": "Steam oyunu, yalnız takip",
+      "oncelik": 2,
+      "steam_appid": "0000000",
+      "steam_demo_appid": "0000001",
+      "magaza": "https://store.steampowered.com/app/0000000",
+      "anlik_oyuncu": "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=0000001",
+      "haberler": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=0000000&count=5",
+      "tartismalar": "https://steamcommunity.com/app/0000000/discussions/",
+      "yorumlar_cikistan_sonra": "https://store.steampowered.com/appreviews/0000000?json=1&filter=recent&language=all",
+      "x_arama": [
+        "\"Örnek Steam Oyunu\""
+      ],
+      "not": "ÖRNEK: Kimlikleri doldurun. Bu projenin koduna dokunulmaz; yalnız yorum, tartışma ve haber takibi yapılır."
+    }
+  ],
+  "ulkeler": [
+    "tr",
+    "us",
+    "de",
+    "gb"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "_not": "ÖRNEK VERİ: Tarihler, izlenmeler, oranlar ve kanal adları kurgusaldır. Boş URL alanlarını gerçek kullanımda doğrulanmış video bağlantılarıyla doldurun.",
+  "tarih": "2030-01-08",
+  "taranan": 3,
+  "okunamayan": [],
+  "son7": [
+    {
+      "baslik": "Ajanla küçük bir uygulama (örnek)",
+      "tarih": "2030-01-05",
+      "url": "",
+      "izlenme": 2000,
+      "kanal": "Örnek Kanal A",
+      "kendi": false,
+      "oran": 2,
+      "yas": 3,
+      "ortanca": 1000
+    },
+    {
+      "baslik": "Bir dakikada ajan akışı (örnek Shorts)",
+      "tarih": "2030-01-07",
+      "url": "",
+      "izlenme": 3000,
+      "kanal": "Örnek Kanal B",
+      "kendi": false,
+      "oran": 3,
+      "yas": 1,
+      "ortanca": 1000
+    },
+    {
+      "baslik": "Model karşılaştırması (örnek)",
+      "tarih": "2030-01-04",
+      "url": "",
+      "izlenme": 1000,
+      "kanal": "Örnek Kanal B",
+      "kendi": false,
+      "oran": 1,
+      "yas": 4,
+      "ortanca": 1000
+    },
+    {
+      "baslik": "Küçük bir uygulama geliştiriyorum (örnek)",
+      "tarih": "2030-01-06",
+      "url": "",
+      "izlenme": 1000,
+      "kanal": "Kanalınız",
+      "kendi": true,
+      "oran": 1,
+      "yas": 2,
+      "ortanca": 1000
+    }
+  ]
+}
