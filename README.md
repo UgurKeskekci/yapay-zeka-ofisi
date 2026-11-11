@@ -15,8 +15,9 @@ Demodaki olaylar, grafikler, sayılar ve mesajlar temsilidir.
 
 ## Beş adımda başlangıç
 
-1. **Hermes'i hazırlayın.** [Hostinger Hermes şablonu](https://www.hostinger.com/vps/docker/hermes-agent) veya
+1. **Hermes'i hazırlayın.** [Hostinger Hermes şablonu](https://hostinger.com/ugurk10) veya
    zaten Hermes kurulu Linux/Docker ortamı. Öneri en az KVM 2, 2 vCPU ve 8 GB RAM. Repo Bash 4+ ve Python 3.10+ ister.
+   Hostinger'da **UGURK10** koduyla %10 indirim alırsınız.
 2. **Modeli ve Telegram'ı bağlayın.** Kapsayıcıda Hermes kullanıcısıyla `hermes model` çalıştırın.
    Telegram botunu Hermes panelinde Channels > Telegram benzeri bölümden bağlayın.
 3. **Repoyu indirin, ortak bilgileri doldurun.** Kapsayıcıda:
@@ -43,6 +44,7 @@ Demodaki olaylar, grafikler, sayılar ve mesajlar temsilidir.
 
 Root terminalinden kullanıcıya geçiş dahil bütün adımlar: **[01: Kurulum](docs/01-kurulum.md)**.
 VPS ve model kullanımı ayrı hizmetlerdir; ücretsiz veya sınırsız kullanım vaat edilmez.
+Hostinger linki satış ortaklığı linkidir: bu linkten alım yaparsanız bana komisyon düşer, size ek maliyeti yoktur.
 
 ## Rehberler
 

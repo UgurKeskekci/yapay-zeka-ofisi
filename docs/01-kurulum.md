@@ -19,7 +19,8 @@ Güvenlik adımları için [07: Güvenlik](07-guvenlik.md) dosyasını da okuyun
 
 ### 1. VPS ve Hermes şablonunu seçin
 
-[Hermes Agent VPS sayfasını](https://www.hostinger.com/vps/docker/hermes-agent) açın.
+[Hermes Agent VPS sayfasını](https://hostinger.com/ugurk10) açın. **UGURK10** koduyla %10 indirim alırsınız
+(satış ortaklığı linki, size ek maliyeti yoktur).
 Hermes Agent tek tık Docker şablonunu seçin. En az KVM 2 (2 vCPU, 8 GB RAM) önerilir.
 Satın alma ve hesap adımlarını tamamlayın. Şablonun kurulumunu bekleyin.
 
